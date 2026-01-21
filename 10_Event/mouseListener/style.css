@@ -1,0 +1,11 @@
+#myBox{
+    background-color: limegreen;
+    width: 300px;
+    height: 300px;
+    font-size: 3.5rem;
+    font-family: monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}

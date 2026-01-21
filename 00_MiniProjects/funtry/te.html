@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover to Display Content</title>
+    <style>
+        .content {
+            width: 300px;
+            height: 200px;
+            background-color: lightgray;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            cursor: pointer;
+            font-family: Arial, sans-serif;
+        }
+
+        .hover-content {
+            display: none; /* Initially hide the content */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Hover over the box below:</h1>
+
+    <div class="content" onmouseover="showContent()" onmouseout="hideContent()">
+        <p>Hover over me!</p>
+
+        <div class="hover-content">
+            <h2>Here is the new content!</h2>
+            <img src="https://via.placeholder.com/100" alt="Sample Image">
+        </div>
+    </div>
+
+    <script>
+        function showContent() {
+            // Show the hover-content when mouse is over the content div
+            document.querySelector('.hover-content').style.display = 'block';
+        }
+
+        function hideContent() {
+            // Hide the hover-content when mouse leaves the content div
+            document.querySelector('.hover-content').style.display = 'none';
+        }
+    </script>
+
+</body>
+</html>

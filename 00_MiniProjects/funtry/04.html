@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String and Math Methods in JavaScript</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        h1 {
+            color: #4CAF50;
+        }
+        h2 {
+            color: #2C3E50;
+        }
+        .code {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+            font-family: monospace;
+            margin-top: 5px;
+        }
+        .output {
+            background-color: #eef;
+            padding: 5px;
+            border: 1px solid #ccc;
+            font-family: monospace;
+            margin-top: 5px;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>JavaScript String and Math Methods</h1>
+
+    <!-- String Methods Section -->
+    <div class="section">
+        <h2>String Methods</h2>
+        <p>Here are some common JavaScript string methods with examples:</p>
+
+        <!-- Example 1: String length Method -->
+        <h3>1. <code>length</code> - Returns the length of a string</h3>
+        <div class="code">
+            <pre>
+let str = "JavaScript";
+console.log(str.length);  // Output: 10
+            </pre>
+        </div>
+        <div class="output">
+            Output: 10
+        </div>
+
+        <!-- Example 2: String toUpperCase Method -->
+        <h3>2. <code>toUpperCase()</code> - Converts a string to uppercase</h3>
+        <div class="code">
+            <pre>
+let str = "hello";
+console.log(str.toUpperCase());  // Output: "HELLO"
+            </pre>
+        </div>
+        <div class="output">
+            Output: "HELLO"
+        </div>
+
+        <!-- Example 3: String indexOf Method -->
+        <h3>3. <code>indexOf()</code> - Returns the position of the first occurrence of a specified value</h3>
+        <div class="code">
+            <pre>
+let str = "JavaScript is fun";
+console.log(str.indexOf("is"));  // Output: 10
+            </pre>
+        </div>
+        <div class="output">
+            Output: 10
+        </div>
+
+        <!-- Example 4: String slice Method -->
+        <h3>4. <code>slice()</code> - Extracts a section of a string and returns it as a new string</h3>
+        <div class="code">
+            <pre>
+let str = "JavaScript";
+console.log(str.slice(0, 4));  // Output: "Java"
+            </pre>
+        </div>
+        <div class="output">
+            Output: "Java"
+        </div>
+
+        <!-- Example 5: String replace Method -->
+        <h3>5. <code>replace()</code> - Replaces a specified value with another value</h3>
+        <div class="code">
+            <pre>
+let str = "I like JavaScript";
+console.log(str.replace("JavaScript", "programming"));  // Output: "I like programming"
+            </pre>
+        </div>
+        <div class="output">
+            Output: "I like programming"
+        </div>
+    </div>
+
+    <!-- Math Methods Section -->
+    <div class="section">
+        <h2>Math Methods</h2>
+        <p>Here are some common JavaScript Math methods with examples:</p>
+
+        <!-- Example 1: Math abs Method -->
+        <h3>1. <code>Math.abs()</code> - Returns the absolute value of a number</h3>
+        <div class="code">
+            <pre>
+console.log(Math.abs(-50));  // Output: 50
+console.log(Math.abs(25));   // Output: 25
+            </pre>
+        </div>
+        <div class="output">
+            Output: 50 (for -50) and 25 (for 25)
+        </div>
+
+        <!-- Example 2: Math max Method -->
+        <h3>2. <code>Math.max()</code> - Returns the largest of the numbers</h3>
+        <div class="code">
+            <pre>
+console.log(Math.max(3, 5, 1, 8));  // Output: 8
+            </pre>
+        </div>
+        <div class="output">
+            Output: 8
+        </div>
+
+        <!-- Example 3: Math min Method -->
+        <h3>3. <code>Math.min()</code> - Returns the smallest of the numbers</h3>
+        <div class="code">
+            <pre>
+console.log(Math.min(3, 5, 1, 8));  // Output: 1
+            </pre>
+        </div>
+        <div class="output">
+            Output: 1
+        </div>
+
+        <!-- Example 4: Math round Method -->
+        <h3>4. <code>Math.round()</code> - Rounds a number to the nearest integer</h3>
+        <div class="code">
+            <pre>
+console.log(Math.round(3.6));  // Output: 4
+console.log(Math.round(3.2));  // Output: 3
+            </pre>
+        </div>
+        <div class="output">
+            Output: 4 (for 3.6) and 3 (for 3.2)
+        </div>
+
+        <!-- Example 5: Math random Method -->
+        <h3>5. <code>Math.random()</code> - Returns a random floating-point number between 0 and 1</h3>
+        <div class="code">
+            <pre>
+console.log(Math.random());  // Output: Random number between 0 and 1
+            </pre>
+        </div>
+        <div class="output">
+            Output: Random value (varies each time)
+        </div>
+    </div>
+
+</body>
+</html>

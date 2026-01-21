@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Calendar</title>
+    <style>
+        .calendar {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        .calendar th, .calendar td {
+            padding: 10px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+        .calendar th {
+            background-color: #f2f2f2;
+        }
+        .calendar td {
+            height: 40px;
+        }
+        select {
+            padding: 5px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Select Month and Year to Display Calendar</h2>
+    <label for="month">Month:</label>
+    <select id="month" onchange="generateCalendar()">
+        <option value="0">January</option>
+        <option value="1">February</option>
+        <option value="2">March</option>
+        <option value="3">April</option>
+        <option value="4">May</option>
+        <option value="5">June</option>
+        <option value="6">July</option>
+        <option value="7">August</option>
+        <option value="8">September</option>
+        <option value="9">October</option>
+        <option value="10">November</option>
+        <option value="11">December</option>
+    </select>
+
+    <label for="year">Year:</label>
+    <select id="year" onchange="generateCalendar()">
+        <!-- JavaScript will populate this -->
+    </select>
+
+    <div id="calendar-container"></div>
+
+    <script>
+        // Initialize the Year dropdown
+        window.onload = function() { // this is the built-in event in js that is triggered whrn the entire web page has finished loading
+            
+            var yearSelect = document.getElementById('year');
+            var currentYear = new Date().getFullYear();
+            
+            // Populate years from 1900 to 2100
+            for (var i = 1900; i <= currentYear + 10; i++) {
+                var option = document.createElement('option');
+                option.value = i;
+                option.text = i;
+                yearSelect.appendChild(option);
+            }
+
+            // Set the default year to current year
+            yearSelect.value = currentYear;
+            
+            // Call the generateCalendar function to display the default calendar
+            generateCalendar();
+        };
+
+        // Function to generate the calendar
+        function generateCalendar() {
+            var month = document.getElementById('month').value;
+            var year = document.getElementById('year').value;
+
+            // Get the first day of the month and the number of days in the month
+            var firstDay = new Date(year, month).getDay();
+            var daysInMonth = new Date(year, parseInt(month) + 1, 0).getDate();
+
+            // Create the calendar table
+            var calendar = "<table class='calendar'>";
+            calendar += "<tr><th>Sun</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th></tr>";
+
+            // Fill in empty cells for the days before the first day of the month
+            var day = 1;
+            calendar += "<tr>";
+            for (var i = 0; i < firstDay; i++) {
+                calendar += "<td></td>";
+            }
+
+            // Fill in the days of the month
+            for (var i = firstDay; i < 7; i++) {
+                calendar += "<td>" + day + "</td>";
+                day++;
+            }
+            calendar += "</tr>";
+
+            // Fill in the rest of the weeks
+            while (day <= daysInMonth) {
+                calendar += "<tr>";
+                for (var i = 0; i < 7 && day <= daysInMonth; i++) {
+                    calendar += "<td>" + day + "</td>";
+                    day++;
+                }
+                calendar += "</tr>";
+            }
+
+            calendar += "</table>";
+
+            // Display the calendar
+            document.getElementById('calendar-container').innerHTML = calendar;
+        }
+    </script>
+</body>
+</html>

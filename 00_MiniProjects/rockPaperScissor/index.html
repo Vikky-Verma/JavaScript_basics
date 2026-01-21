@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissor</title>
+    <style>
+        body{
+            background-color: rgb(25,25,25);
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+        .title{
+            font-size: 30px;
+            font-weight: bold;
+        }
+        .move-icon{
+            height: 50px;
+            /* border-radius: 1px;
+            background-color: black; */
+        }
+        .move-button{
+            background-color: transparent;
+            border: 3px solid white;
+            height: 120px;
+            width: 120px;
+            border-radius: 60px;
+            margin: 10px;
+            cursor: pointer;
+        }
+        .result{
+            font-size: 25px;
+            font-weight: bold;
+            margin-top: 50px;
+
+        }
+        .score{
+            margin-top: 60px;
+        }
+        .reset-score-btn,.auto-set-btn{
+            background-color: white;
+            border: none;
+            font-size: 15px;
+            padding: 8px 15px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    
+    <p class="title">Rock Paper Scissors</p>
+    <button class="move-button  js-rock-button" ><img src="rock-emoji.png" alt="Rock" class="move-icon" ></button>
+
+    <button class="move-button js-paper-button"><img src="paper-emoji.png" alt="Paper" class="move-icon"  ></button>
+
+    <button class="move-button js-scissor-button" ><img src="scissors-emoji.png" alt="Scissor"class="move-icon"></button>
+
+    <p class="js-result" class="result"></p>
+    <p class="js-moves" >
+        <!-- You 
+        <img src="rock-emoji.png" alt="rock"class="move-icon">
+        <img src="scissors-emoji.png" alt="Scissor"class="move-icon">
+        Computer -->
+
+    </p>
+    <p class="js-score score"></p>
+
+    <button onclick="
+      score.wins = 0;
+      score.losses = 0;
+      score.ties = 0;
+      localStorage.removeItem('score');
+      updateScoreElement();
+    "
+    class="reset-score-btn"
+    >Reset Score</button>
+    
+    <button class="auto-set-btn" onclick="autoPlay()">Auto Play</button>
+    <script src="game.js">
+    </script>
+
+    
+</body>
+</html>

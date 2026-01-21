@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API</title>
+</head>
+<body>
+    0	UNSENT	Client has been created. open() not called yet.
+    1	OPENED	open() has been called.
+    2	HEADERS_RECEIVED	send() has been called, and headers and status are available.
+    3	LOADING	Downloading; responseText holds partial data.
+    4	DONE	The operation is complete.
+    <script>
+        const requestUrl ='https://api.github.com/users/hiteshchoudhary';
+
+        const xhr = new XMLHttpRequest();
+        xhr.open('Get',requestUrl)
+        xhr.onreadystatechange = function(){
+        console.log(xhr.readyState);
+        if(xhr.readyState===4){
+            // console.log(this.responseText)
+            //  now i want to see the follower of hitesh so we use it as 
+            
+            // const data = this.responseText
+
+            // console.log(typeof data)
+            // as now we know that the type of data is string so now change this to the object
+
+
+            const data = JSON.parse(this.responseText)
+            console.log(typeof data)
+            console.log(data.followers);
+            console.log(data.avatar_url)
+        }
+        } 
+        xhr.send();
+    </script>
+
+    <!--read V8 engine once -->
+</body>
+</html>

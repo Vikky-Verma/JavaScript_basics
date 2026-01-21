@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissor</title>
+</head>
+<body>
+    <p>Rock Paper Scissors</p>
+    <button onclick="
+        playgame('rock') 
+    ">Rock</button>
+    <button onclick="
+        playgame('paper')
+    ">Paper</button>
+    
+    <button onclick="
+        playgame('scissor')
+    ">Scissors</button>
+</body>
+    <script>
+        
+    let computerMove= '';
+function pickComputerMove(){
+    const randomNumber = Math.random(); // as we know that it give a random no. between 0 and 1
+    
+    
+    if(randomNumber  >=0 && randomNumber<1/3){ 
+        computerMove= 'rock'
+    } 
+    else if(randomNumber >=1/3 && randomNumber < 2/3){
+      
+        computerMove= 'paper';
+
+    }
+    else if(randomNumber>=2/3 && randomNumber<1){
+     
+        computerMove = 'scissor';
+    }
+}
+
+function playgame(playerMove){
+        pickComputerMove()
+        let result = '';
+        if(playerMove=='rock'){
+            if(computerMove==='rock'){
+            result = 'Tie';
+            }
+            else if(computerMove==='paper')result = 'Loose';
+            else result = 'Win';
+            
+            
+            
+            alert(`You picked ${playerMove} and computer picked ${computerMove}\nYou ${result}`)
+
+        }
+
+        else if(playerMove==='paper'){
+            if(computerMove==='paper'){
+                result = 'Tie';
+            }
+            else if(computerMove==='scissor')result = 'Loose';
+            else result = 'Win';
+            alert(`You picked ${playerMove} and computer picked ${computerMove}\nYou ${result}`)
+
+        }
+
+        else if(playerMove==='scissor'){
+            if(computerMove==='rock'){
+                result = 'Loose';
+            }
+            else if(computerMove==='paper')result= 'Win';
+            else result = 'Tie';
+            alert(`You picked ${playerMove}and computer picked ${computerMove}\nYou ${result}`)
+
+        }
+        
+}
+    </script>
+</html>

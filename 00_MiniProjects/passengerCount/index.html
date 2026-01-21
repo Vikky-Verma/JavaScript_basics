@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passenger counter</title>
+    <style>
+        body{
+            background-image: url(https://th.bing.com/th/id/OIP.deHUHn6eQg8sMtg8-J-5yAHaD3?w=280&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7);
+            background-size: cover;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            text-align: center; 
+
+        }
+        h1{
+            margin: 10px;
+            padding: 10px;
+
+        }
+        h2{
+            font-size: 50px;
+            margin-top: 0;
+            margin-bottom: 20px;
+
+        }
+        button{
+            border: none; 
+            border-radius: 5px;
+            background-color: red;
+            color: aliceblue;
+            font-weight: bold;
+            margin-bottom: 5px;
+            padding: 10px;
+            
+        }
+        #increment-btn{
+            background: darkred;
+        }
+         #save-btn{ 
+            background-color: green;
+            color: red;
+         }
+    </style>
+</head>
+<body>
+   
+    <h1>People Present in the subway: </h1>
+    <h2 id="count-el" > 0</h2>
+   <button id="increament-btn"onclick="increment()">INCREMENT</button>
+    <button id="decrement" onclick="decrement()">DECREMENT</button> 
+</body>
+<script src="script.js"></script>
+</html>

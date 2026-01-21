@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Array and Date Functions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        h2 {
+            color: #4CAF50;
+        }
+        .code {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+            font-family: monospace;
+        }
+        .output {
+            background-color: #eef;
+            padding: 5px;
+            border: 1px solid #ccc;
+            font-family: monospace;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Understanding JavaScript Array and Date Functions</h1>
+
+    <!-- Array Methods Section -->
+    <div class="section">
+        <h2>Array Methods</h2>
+        <p>JavaScript Arrays have many predefined methods that help manipulate arrays. Below are a few commonly used methods:</p>
+
+        <!-- Example 1: Array Push Method -->
+        <h3>1. <code>push()</code> - Adds one or more elements to the end of an array.</h3>
+        <div class="code">
+            <pre>
+let arr = [1, 2, 3];
+arr.push(4); // Adds 4 to the end of the array
+console.log(arr); // Output: [1, 2, 3, 4]
+            </pre>
+        </div>
+        <div class="output">
+            Output: [1, 2, 3, 4]
+        </div>
+
+        <!-- Example 2: Array pop Method -->
+        <h3>2. <code>pop()</code> - Removes the last element of an array.</h3>
+        <div class="code">
+            <pre>
+let arr = [1, 2, 3];
+arr.pop(); // Removes 3 from the array
+console.log(arr); // Output: [1, 2]
+            </pre>
+        </div>
+        <div class="output">
+            Output: [1, 2]
+        </div>
+
+        <!-- Example 3: Array map Method -->
+        <h3>3. <code>map()</code> - Creates a new array with the results of calling a provided function on every element in the calling array.</h3>
+        <div class="code">
+            <pre>
+let arr = [1, 2, 3];
+let squared = arr.map(x => x * x);
+console.log(squared); // Output: [1, 4, 9]
+            </pre>
+        </div>
+        <div class="output">
+            Output: [1, 4, 9]
+        </div>
+
+        <!-- Example 4: Array filter Method -->
+        <h3>4. <code>filter()</code> - Creates a new array with all elements that pass the test implemented by the provided function.</h3>
+        <div class="code">
+            <pre>
+let arr = [1, 2, 3, 4, 5];
+let evenNumbers = arr.filter(x => x % 2 === 0);
+console.log(evenNumbers); // Output: [2, 4]
+            </pre>
+        </div>
+        <div class="output">
+            Output: [2, 4]
+        </div>
+
+        <!-- Example 5: Array forEach Method -->
+        <h3>5. <code>forEach()</code> - Executes a provided function once for each array element.</h3>
+        <div class="code">
+            <pre>
+let arr = [1, 2, 3];
+arr.forEach(x => console.log(x)); 
+// Output: 1 2 3 (prints each element in the array)
+            </pre>
+        </div>
+        <div class="output">
+            Output: 1 2 3 (printed individually)
+        </div>
+    </div>
+
+    <!-- Date Methods Section -->
+    <div class="section">
+        <h2>Date Methods</h2>
+        <p>The JavaScript <code>Date</code> object allows you to work with dates and times. Below are some commonly used methods:</p>
+
+        <!-- Example 1: Date Now Method -->
+        <h3>1. <code>Date.now()</code> - Returns the current timestamp in milliseconds.</h3>
+        <div class="code">
+            <pre>
+let currentTime = Date.now();
+console.log(currentTime); // Output: Current timestamp in milliseconds
+            </pre>
+        </div>
+        <div class="output">
+            Output: 1672287600000 (varies depending on when it's executed)
+        </div>
+
+        <!-- Example 2: Date getFullYear Method -->
+        <h3>2. <code>getFullYear()</code> - Returns the year (4 digits) of the specified date.</h3>
+        <div class="code">
+            <pre>
+let date = new Date();
+let year = date.getFullYear();
+console.log(year); // Output: Current year (e.g., 2024)
+            </pre>
+        </div>
+        <div class="output">
+            Output: 2024 (or the current year)
+        </div>
+
+        <!-- Example 3: Date getMonth Method -->
+        <h3>3. <code>getMonth()</code> - Returns the month (0-11) in the specified date.</h3>
+        <div class="code">
+            <pre>
+let date = new Date();
+let month = date.getMonth(); 
+console.log(month); // Output: Current month (0 = January, 1 = February, etc.)
+            </pre>
+        </div>
+        <div class="output">
+            Output: 11 (for December)
+        </div>
+
+        <!-- Example 4: Date getDate Method -->
+        <h3>4. <code>getDate()</code> - Returns the day of the month (1-31) of the specified date.</h3>
+        <div class="code">
+            <pre>
+let date = new Date();
+let dayOfMonth = date.getDate();
+console.log(dayOfMonth); // Output: Current day of the month (e.g., 26)
+            </pre>
+        </div>
+        <div class="output">
+            Output: 26 (or the current day of the month)
+        </div>
+
+        <!-- Example 5: Date getHours Method -->
+        <h3>5. <code>getHours()</code> - Returns the hour (0-23) of the specified date.</h3>
+        <div class="code">
+            <pre>
+let date = new Date();
+let hour = date.getHours();
+console.log(hour); // Output: Current hour (0-23)
+            </pre>
+        </div>
+        <div class="output">
+            Output: 15 (or the current hour)
+        </div>
+    </div>
+
+</body>
+</html>

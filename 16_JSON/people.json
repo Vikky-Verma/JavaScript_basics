@@ -1,0 +1,24 @@
+[
+    {
+        "name":"Anurag",
+        "age" : 19,
+        "isEmployed" : false,
+        "hobbies" : ["karate" , "coding" , "cooking"]
+    
+    
+    }, 
+    {
+        "name":"Patrick",
+        "age" : 30,
+        "isEmployed" : true,
+        "hobbies" : [ "coding" , "jellyfishing"]
+    
+    },
+    {
+        "name":"Eshan",
+        "age" : 21,
+        "isEmployed" : false,
+        "hobbies" : [ "coding" , "guitarplaying"]
+    
+    }
+]

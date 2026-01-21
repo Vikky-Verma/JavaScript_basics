@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array & Date Methods</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        code { background-color: #f4f4f4; padding: 2px 5px; }
+        .output { background-color: #eef; padding: 5px; margin: 5px 0; }
+    </style>
+</head>
+<body>
+
+    <h1>Array & Date Methods in JavaScript</h1>
+
+    <h2>Array Methods</h2>
+    <p><code>push()</code> - Add to end:</p>
+    <pre>let arr = [1, 2]; arr.push(3); console.log(arr); // [1, 2, 3]</pre>
+    <div class="output">[1, 2, 3]</div>
+
+    <p><code>pop()</code> - Remove last:</p>
+    <pre>arr.pop(); console.log(arr); // [1, 2]</pre>
+    <div class="output">[1, 2]</div>
+
+    <p><code>shift()</code> - Remove first:</p>
+    <pre>arr.shift(); console.log(arr); // [2]</pre>
+    <div class="output">[2]</div>
+
+    <p><code>unshift()</code> - Add to start:</p>
+    <pre>arr.unshift(1); console.log(arr); // [1, 2]</pre>
+    <div class="output">[1, 2]</div>
+
+    <h2>Date Methods</h2>
+    <p><code>getDate()</code> - Day of month:</p>
+    <pre>let date = new Date(); console.log(date.getDate());</pre>
+    <div class="output">e.g., 26</div>
+
+    <p><code>getDay()</code> - Day of week:</p>
+    <pre>console.log(date.getDay());</pre>
+    <div class="output">e.g., 5 (Friday)</div>
+
+    <p><code>getFullYear()</code> - Full year:</p>
+    <pre>console.log(date.getFullYear());</pre>
+    <div class="output">e.g., 2024</div>
+
+    <p><code>toLocaleDateString()</code> - Local date string:</p>
+    <pre>console.log(date.toLocaleDateString());</pre>
+    <div class="output">e.g., "12/26/2024"</div>
+
+</body>
+</html>

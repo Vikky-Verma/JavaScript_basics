@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registration form</title>
+    <style>
+        body{
+            background-color: #f0f8ff;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #333333;
+            font-size: 16px;
+        }
+        .form-container{
+            margin: 50px auto;
+            width: 50%;
+            border: 2 px solid #cccccc;
+            border-radius: 10px;
+            padding: 20px;
+            background-color: #fff;
+        }
+        table{
+            width: 100%;
+            margin-top: 20px;
+        }
+        td{
+            padding: 10px;
+        }
+        input[type = "text"], input[type = "email"],input[type= "password"],input[submit]{
+            width: 100%;
+            padding: 8px;
+            font-size: 14px;
+            border: 1px solid #cccccc;
+            border-radius: 5px;
+        }
+        input[type = "submit"]{
+            background-color: #4caf50;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        input[type = "submit"]:hover{
+            background-color: #4caf49;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>
+            Registration form 
+        </h2>
+        <form action="#" method="post">
+            <table>
+                <tr>
+                    <td><label for="fullname">full name</label></td>
+                    <td><input type="text" id="fullname" placeholder="your good name please" focus></td>
+                     
+                </tr>
+                <tr>
+                    <td><label for="email">Email</label></td>
+                    <td><input type="email" id="email" required ></td>
+                </tr>
+                <tr>
+                    <td><label for="password">password</label></td>
+                    <td><input type="password" placeholder="password"></td>
+                </tr>
+                <tr>
+                    <td><label for="confirmpassword">confirm password</label></td>
+                    <td><input type="password" id="confirmpassword" placeholder="confirm password"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: center;">
+                        <input type="submit" value="register">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,8 @@
+{
+    "name":"Anurag",
+    "age" : 19,
+    "isEmployed" : false,
+    "hobbies" : ["karate" , "coding" , "cooking"]
+
+
+} 

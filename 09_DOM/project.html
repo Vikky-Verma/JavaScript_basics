@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM -project</title>
+    <style>
+        .is-subscribed{
+            background-color: rgb(152, 149, 149);
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    
+    <p>
+        Youtube Subscribe Button
+    </p>
+    <button onclick="change()" class="js-button">
+        Subscribe
+    </button>
+</body>
+<script>
+    function change(){
+        const buttonElement = document.querySelector('.js-button');
+        if(buttonElement.innerHTML === 'Subscribe'){
+            buttonElement.innerHTML= 'Subscribed';
+            buttonElement.classList.add('is-subscribed')
+        }else {
+            buttonElement.innerHTML = 'Subscribe';
+            buttonElement.classList.remove('is-subscribed');
+        }
+    }
+</script>
+</html>
