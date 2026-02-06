@@ -18,7 +18,7 @@ console.log(hunderds.toLocaleString('en-IN'))
 
 // *************************************************
                     //  Maths
-console.log(Math)
+console.log(Math) // value between 0 to 1
 console.log(Math.abs(-1))
 console.log(Math.round(4.6))
 console.log(Math.ceil(4.2))

@@ -2,10 +2,10 @@
 // javascript run from top to bottom
 
 const accountId = 144553
-let accountEmail  = "am1234@gmail.com" //no problem with scope
+let accountEmail  = "vikky1234@gmail.com" //no problem with scope
 var accountPassword = "12345" //generally we not use var due to lack of scope
 accountCity = "Jaipur"
-let accountstate ;
+let accountstate ; // undefined 
 console.log(accountstate) // if no value is alloted then it show undefined
 console.log(accountId);
 console.log(accountEmail);

@@ -36,7 +36,7 @@ Javascript is dynamic language
 
 const heros =["Shaktiman ", "Iron Man ","Hulk"]
 let myObj ={
-    name : "Anurag",
+    name : "Vikky",
     age : 18,
 }
 

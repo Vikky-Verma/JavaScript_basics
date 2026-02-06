@@ -1,12 +1,12 @@
 "use strict"; // treat all JS code as newer version
 // alert("Hello! I am here...") //we are using here nodejs not browser
 console.log(3+3)
-console.log("Anurag")
+console.log("Vikky")
 /* documentation used in this journey is 
         1.mdn 
         2.tc39
 */
-let name = "Anurag"
+let name = "Vikky"
 let age = 18
 let isLoggedIn = false 
 
