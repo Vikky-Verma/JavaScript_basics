@@ -9,7 +9,7 @@
 
 
 const person ={
-    fullname : "Anurag Mishra",
+    fullname : "Vikky Verma",
     age : 19,
     isStudent : true,
     hobbies : ["travelling","jellyfishing","coding"],
