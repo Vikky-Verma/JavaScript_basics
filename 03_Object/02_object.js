@@ -4,14 +4,14 @@ const tinderUser2 ={} // it is not a singleton obect
 tinderUser.id = "123456"
 tinderUser.name = "Sammy"
 tinderUser.isLoggin = false;
-console.log(tinderUser)
+// console.log(tinderUser)
 
 const regularUser ={
-    email : "anurag@gmail.com",
+    email : "vikky@gmail.com",
     fullname :{ // nested object (object inside the another)
             userfullname:{
-                firstname : "Anurag", 
-                lastname:  "Mishra"
+                firstname : "Vikky", 
+                lastname:  "Verma"
             }
     },
     fun : function function1(){ // here fun is method inside the regularUser object
@@ -20,10 +20,10 @@ const regularUser ={
     }
 
 }
-console.log(regularUser.fun());
-console.log(regularUser.fullname)
-console.log("")
-console.log(regularUser.fullname.userfullname)
+// console.log(regularUser.fun());
+// console.log(regularUser.fullname)
+// console.log("")
+// console.log(regularUser.fullname.userfullname)
 
 const obj1 ={ 1:'A',2:"B"}
 const obj2 = {3:"W",4:"R"}
@@ -36,24 +36,25 @@ const obj4 = {5:"a", 6:"b"}
 
 // concat two or more object 
 const obj3 = {...obj1,...obj2,...obj4}
-console.log(obj3)
+// console.log(obj3)
 
-//  when value come from databsed
+
+//  when value come from database
 // array of objects
 
 const users = [
     {
         id : 1,
-        email : "Anurag@321"
+        email : "Vikky@321"
 
     }, 
     {
         id : 2, 
-        email: "Anurag...@321"
+        email: "Vikky...@321"
     }, 
     {
         id : 3,
-        email : "am431@google.com"
+        email : "vikky431@google.com"
     }
 ]
 
@@ -63,6 +64,6 @@ console.log(Object.keys(tinderUser))
 console.log(Object.values(tinderUser))
 console.log(Object.entries(tinderUser))
 
-console.log(tinderUser.hasOwnProperty('isloggin'))
+console.log(tinderUser.hasOwnProperty('isLoggin'))
 console.log(tinderUser.hasOwnProperty('isloggIn')) // confirm that the properties is in the object or not
 // hasOwnProperty is a method used to check  if an object has specific property as its own property
