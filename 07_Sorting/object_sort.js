@@ -1,6 +1,6 @@
 const people = [
-    {name : "Anurag mishra" , age : 19 ,gpa :9.5},
-    {name : "eshan pandey" , age : 22 , gpa :8},
+    {name : "Vikky Verma" , age : 22 ,gpa :9.6},
+    {name : "Anubhav" , age : 22 , gpa :8},
     {name : "Sandy" , age :20, gpa : 4.0},
     {name : "Patrick" , age: 37 , gpa:2.5},
     {name : "bob" , age : 30 , gpa :23}
