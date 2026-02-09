@@ -9,10 +9,10 @@ function calculateCartPrice(val1, val2,...num1){ // ... is called as rest operat
 
 
 const user = {
-    username : "Anurag",
+    username : "Vikky Verma",
     prices : 199
 }
-function handleObject(anyobject){
+function handleObject(anyobject){ // argument as object
         console.log(`Username is ${anyobject.username} and price is ${anyobject.prices}`);
 
 }
@@ -23,7 +23,8 @@ handleObject({
 })
 
 const myNewArray= [200,400,486,605,45,96]
-function returnSecondValue(getarray){
+function returnSecondValue(getarray){ // argument as array 
     return  getarray[1]
 }
 console.log(returnSecondValue(myNewArray));
+console.log(returnSecondValue([100,400, 300, 500, 800]));

@@ -1,20 +1,21 @@
 //  this is used for the current context
 const user = {
-    username : "Anurag",
+    username : "Vikky",
     price : 999,
     //  when we referening the current context then we use 'this' 
     welcomeMgs : function(){
         console.log(`${this.username}  welcome to this site  \nPrice of the course is ${this.price}`)
+        // console.log(this) // this refer to the current context variable 
     }
 }
-user.welcomeMgs()
-user.username = "Sam"
-user.welcomeMgs()
+// user.welcomeMgs()
+// user.username = "Sam"
+// user.welcomeMgs()
 
-console.log(this) // in node environment it give empty object
+// console.log(this) // in node environment it give empty object and in browser it gives window object 
 
 // function chai(){
-//     let username = "Anurag Mishra"
+//     let username = "Vikky Verma"
 //    // console.log(this) // ==> this give an empty {} object in node js environment whereas in brower it give window
 //    console.log(this.username) //undefined
 // }
@@ -22,17 +23,17 @@ console.log(this) // in node environment it give empty object
 // chai()
 
 // const chai = function(){
-//     let username = "Anurag "
+//     let username = "Vikky "
 //     console.log(this.username)
 // }
 // chai();
 
 // arrow function
-const chai = () =>{
-    let username = "Anurag "
-    console.log(this )
-}
-chai();
+// const chai = () =>{
+//     let username = "Vikky "
+//     console.log(this )
+// }
+// chai();
 //  Read this from the mdn 
 
 // const addtwo = (nums1 , nums2) => {
@@ -43,7 +44,8 @@ chai();
 
 //  Implict function 
 const addtwo = (nums1 , nums2) =>  nums1 + nums2; // Jab ek line ka hi code ho 
-const three=()=>({ username:"Anurag"})  // if we want to access the username we have to wrap it into ()
+//  Object return ek liye ushko parenthesis me wrap karna padega
+const three=()=>({ username:"Vikky"})  // if we want to access the username we have to wrap it into ()
 
 console.log(addtwo(3,7))
 

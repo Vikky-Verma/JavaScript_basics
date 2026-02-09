@@ -7,4 +7,4 @@
 //  it is also can write in arrow function
 ((name)=>{
     console.log( `DB CONNECTED ${name}` );
-})("Anurag");
+})("Vikky");
