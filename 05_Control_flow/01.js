@@ -1,6 +1,6 @@
 //  if
 // if(condition==true){}
-// compression statement --->   >,< ,<= ,>=, ==,!=, === (it check the type of datatype also)
+// comparison statement --->   >,< ,<= ,>=, ==,!=, === (it check the type of datatype also)
 
 if("2"!=3){
     console.log("true");
@@ -8,7 +8,6 @@ if("2"!=3){
 
 if("2"===2){
     console.log("true"); // will not run as the datatype is different
-
 }
 else {
     console.log("false");
@@ -38,5 +37,4 @@ if(userLoggedin && debitcard){
 }
 if(logginfromGoogle || userLoggedinfromEmail){//mutiple condition checking
     console.log("User logged in")
-
 }

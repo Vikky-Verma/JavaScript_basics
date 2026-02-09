@@ -1,4 +1,4 @@
-const useremail = "anurag.ai";
+const useremail = "vikky.ai";
 if(useremail)console.log("Got user email")// yadi useremail is not a empty string it is consider as true otherwise false\
 
 else console.log("Don't have user email")
@@ -9,6 +9,7 @@ else console.log("Don't have user email")
     0
     -0
     BigInt 0n
+    ""
     null 
     undefined
     NaN
@@ -17,9 +18,9 @@ else console.log("Don't have user email")
  *  "0"
  *  "false"
  *  " "
- * [ ]
- * {}
- * function(){}
+ * [ ] // empty array 
+ * {}  // empty object
+ * function(){}  // empty function 
  *  
  */
 const arr = []
@@ -36,10 +37,10 @@ if(Object.keys(emptyObj).length===0) console.log("Object is empty")
 //  Nullish Coalescing Operator (??) : null  and undefined 
 
 let val1 ;
-val1 = 5 ?? 10
-val1 = null ?? 10 
-val1 = undefined ?? 15;
-val1 = null ?? 10 ?? 20 ;
+val1 = 5 ?? 10  // takes a 5 
+val1 = null ?? 10  // takes a 10 
+val1 = undefined ?? 15; // takes a 15 
+val1 = null ?? 10 ?? 20 ;  // takes first value 10
 console.log(val1)
 
 
