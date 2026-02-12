@@ -13,13 +13,16 @@
    const div =  document.createElement('div');
    console.log(div)
    div.className = "main";
+   // div.id = "first"
    div.id = Math.round(Math.random()*10+1);
    div.setAttribute("title", "generated title")
-   div.style.padding = "12px"
-   div.innerText= "Helloo.... Bhaiyooooooo......";
-//    innerText overwrite the value of the previous 
-const addText = document.createTextNode("RAM RAM BHAIYOO....") 
-div.appendChild(addText);
-document.body.appendChild(div);
+   div.style.padding = "12px" 
+   div.style.backgroundColor= "Red"
+   // div.innerText= "Helloo.... Bhaiyooooooo......";
+   // innerText overwrite the value of the previous 
+   const addText = document.createTextNode("RAM RAM BHAIYOO....") 
+   div.appendChild(addText);
+   document.body.appendChild(div);
+   
 </script>
 </html>
