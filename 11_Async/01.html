@@ -13,10 +13,14 @@
     const sayHitesh = function(){
         console.log("Hitesh");
     }
+    // setTimeout(sayHitesh, 2000) // it will print hitesh after 2 seconds
+    
     const changeText = function(){
         document.querySelector('h1').innerHTML = "best JS series"
     }
 
+    // setTimeout(changeText, 2000)
+   
     const changeMe = setTimeout(changeText, 2000)
 
     document.querySelector('#stop').addEventListener('click', function(){
