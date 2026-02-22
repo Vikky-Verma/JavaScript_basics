@@ -1,6 +1,6 @@
 // object literal 
 // const user = {
-//     username : "Anurag",
+//     username : "Vikky",
 //     logincount : 8,
 //     signedIn : true,
 //     getUserDetails : function(){
@@ -36,15 +36,15 @@ function User(username,logincount,isLoggin){
     //  By default , a constructor function returns the object that it creates(i.e this) , so returing this explicitly doesn't change the behaviour
 }
 
-// const userone = User("Anurag",12, true);
-// const userTwo = User("Sam",45,false);// we are not printing userTwo but i can printed 
+// const userone = User("Vikky",12, true);
+// const userTwo = User("Charlie",45,false);// we are not printing userTwo but i can printed 
 // this is because userTwo overwrite the context of userone;
 // and this not good that why we use "new";
 // console.log(userone);
 
 
-const userone = new User("Anurag",12, true);
-const userTwo = new User("Sam",45,false);
+const userone = new User("Vikky",12, true);
+const userTwo = new User("Charlie",45,false);
 console.log(userone);
 console.log(userTwo); // as we use 'new' give us new instance
 
@@ -56,3 +56,5 @@ console.log(userTwo); // as we use 'new' give us new instance
  */
 console.log(userTwo.constructor) // constuctor properties khud ke hi baare me reference hota h
 //  read another method from google : "instanceof"
+
+console.log(userone instanceof User); // this is also a method to check the constructor of the object

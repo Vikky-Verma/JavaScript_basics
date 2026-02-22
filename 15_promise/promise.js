@@ -33,7 +33,7 @@ new Promise(function(resolve , reject){
 })
 const promise3 = new Promise(function (resolve , reject){
     setTimeout((function(){
-        resolve({username: "Anurag", email:"anurag@ai"})
+        resolve({username: "Vikky", email:"vikky@ai"})
     }),1000)
 })
 promise3.then(function(user){
@@ -44,7 +44,7 @@ const promise4 = new Promise(function(resolve,reject){
     setTimeout(function(){
         let error =true;
         if(!error){
-            resolve({username : "anurag", password: "124"})
+            resolve({username : "vikky", password: "125"})
 
         }else{
             reject('404 ERROR... something went wrong');
@@ -74,6 +74,8 @@ const promise5 = new Promise(function(resolve , reject){
 });
 
 async function consumePromise5(){ 
+    //const response = await promise5
+    //console.log(response);
     try {
         const response = await promise5
         console.log(response);
@@ -104,4 +106,4 @@ fetch('https://jsonplaceholder.typicode.com/users')
 }).then((data)=>{
     console.log(data);
 })
-.catch((error)=> console.log("Error"))
+.catch((error)=> console.log("Error")) 
